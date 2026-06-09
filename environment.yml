@@ -18,6 +18,12 @@ dependencies:
   - dask
   # Geographic projections, coastlines and map features
   - cartopy
+  # Intake catalog interface for CMIP6 (cloud + ESGF collections)
+  - intake-esm
+  # Statistical visualization on top of matplotlib
+  - seaborn
+  # Progress bars for loops / long-running cells
+  - tqdm
   # Jupyter so Binder can launch the notebook
   - jupyterlab
   - notebook
