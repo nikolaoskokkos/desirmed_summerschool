@@ -12,10 +12,12 @@ dependencies:
   - requests
   # OPeNDAP / netCDF remote data access
   - netcdf4
-  # for cftime-based time axes (DatetimeNoLeap) used by the data
+  # cftime-based time axes (DatetimeNoLeap) used by the data
   - cftime
   # Lazy/parallel loading of OPeNDAP-backed datasets
   - dask
+  # Geographic projections, coastlines and map features
+  - cartopy
   # Jupyter so Binder can launch the notebook
   - jupyterlab
   - notebook
