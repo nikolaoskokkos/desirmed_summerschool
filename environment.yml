@@ -1,0 +1,21 @@
+name: cmip6-esgf-opendap
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  # Core scientific stack
+  - numpy
+  - pandas
+  - matplotlib-base
+  - xarray
+  # ESGF search API calls
+  - requests
+  # OPeNDAP / netCDF remote data access
+  - netcdf4
+  # for cftime-based time axes (DatetimeNoLeap) used by the data
+  - cftime
+  # Lazy/parallel loading of OPeNDAP-backed datasets
+  - dask
+  # Jupyter so Binder can launch the notebook
+  - jupyterlab
+  - notebook
