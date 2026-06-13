@@ -8,6 +8,8 @@ dependencies:
   - pandas
   - matplotlib-base
   - xarray
+  # ESGF federated search (wraps the Solr REST API across all nodes)
+  - esgf-pyclient
   # ESGF search API calls
   - requests
   # OPeNDAP / netCDF remote data access
@@ -20,6 +22,13 @@ dependencies:
   - cartopy
   # Intake catalog interface for CMIP6 (cloud + ESGF collections)
   - intake-esm
+  # Zarr store access (cloud-hosted CMIP6 zarr datasets)
+  - zarr
+  - fsspec
+  - gcsfs
+  # Climate indices and bias adjustment
+  - xclim
+  - icclim
   # Statistical visualization on top of matplotlib
   - seaborn
   # Progress bars for loops / long-running cells
