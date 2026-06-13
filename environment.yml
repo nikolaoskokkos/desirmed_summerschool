@@ -33,6 +33,10 @@ dependencies:
   - seaborn
   # Progress bars for loops / long-running cells
   - tqdm
+  # Interactive maps (hvPlot + GeoViews + Bokeh backend)
+  - hvplot
+  - geoviews
+  - bokeh
   # Jupyter so Binder can launch the notebook
   - jupyterlab
   - notebook
