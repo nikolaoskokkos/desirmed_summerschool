@@ -40,3 +40,5 @@ dependencies:
   # Jupyter so Binder can launch the notebook
   - jupyterlab
   - notebook
+  # netcf time handling
+  - nc-time-axis
