@@ -14,6 +14,7 @@ dependencies:
   - requests
   # OPeNDAP / netCDF remote data access
   - netcdf4
+  - pydap
   # cftime-based time axes (DatetimeNoLeap) used by the data
   - cftime
   # Lazy/parallel loading of OPeNDAP-backed datasets
