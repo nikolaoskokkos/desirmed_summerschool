@@ -4,10 +4,10 @@ channels:
 dependencies:
   - python=3.11
   # Core scientific stack
-  - numpy
+  - numpy>2                # numba <0.60 and icclim <7 reference numpy._no_nep50_warning removed in numpy 2.0
   - pandas
   - matplotlib-base
-  - xarray
+  - xarray>2024.2  # icclim <7 imports xarray.core.arithmetic removed in xarray 2024.2
   # ESGF federated search (wraps the Solr REST API across all nodes)
   - esgf-pyclient
   # ESGF search API calls
