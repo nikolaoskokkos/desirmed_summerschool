@@ -3,6 +3,7 @@ channels:
   - conda-forge
 dependencies:
   - python=3.11
+  - setuptools<71  # setuptools 71+ dropped pkg_resources, required by intake-esm and others
   # Core scientific stack
   - numpy>2                # numba <0.60 and icclim <7 reference numpy._no_nep50_warning removed in numpy 2.0
   - pandas
